@@ -1,0 +1,27 @@
+@host = http://127.0.0.1:8000
+@token = {{login.response.body.$.token}}
+
+### Login
+# @name login
+POST {{ host }}/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "earlfunk21",
+    "password": "Morax022117"
+}
+
+###
+
+GET {{ host }}/test_token HTTP/1.1
+Authorization: Bearer {{token}}
+
+###
+
+POST {{ host }}/signup HTTP/1.1
+content-type: application/json
+
+{
+    "username": "earlfunk21",
+    "password": "Morax022117"
+}
