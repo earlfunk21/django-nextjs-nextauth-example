@@ -5,3 +5,4 @@
 [submodule "server"]
 	path = server
 	url = https://github.com/earlfunk21/django-nextjs-nextauth-example.git
+	branch = server
