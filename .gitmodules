@@ -1,0 +1,3 @@
+[submodule "client"]
+	path = client
+	url = https://github.com/earlfunk21/django-nextjs-nextauth-example.git
